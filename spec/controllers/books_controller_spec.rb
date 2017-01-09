@@ -52,20 +52,20 @@ RSpec.describe BooksController, type: :controller do
     end
   end
 
-  describe "GET #new" do
-    it "assigns a new book as @book" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:book)).to be_a_new(Book)
-    end
-  end
+  # describe "GET #new" do
+  #   it "assigns a new book as @book" do
+  #     get :new, params: {}, session: valid_session
+  #     expect(assigns(:book)).to be_a_new(Book)
+  #   end
+  # end
 
-  describe "GET #edit" do
-    it "assigns the requested book as @book" do
-      book = Book.create! valid_attributes
-      get :edit, params: {id: book.to_param}, session: valid_session
-      expect(assigns(:book)).to eq(book)
-    end
-  end
+  # describe "GET #edit" do
+  #   it "assigns the requested book as @book" do
+  #     book = Book.create! valid_attributes
+  #     get :edit, params: {id: book.to_param}, session: valid_session
+  #     expect(assigns(:book)).to eq(book)
+  #   end
+  # end
 
   describe "POST #create" do
     context "with valid params" do
